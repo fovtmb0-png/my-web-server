@@ -690,15 +690,3 @@ app.listen(3000, () => {
 </body>
 </html>`
 };
-
-// 3. ສັ່ງຂຽນໄຟລ໌ທັງໝົດ
-for (const [filename, content] of Object.entries(files)) {
-    fs.writeFileSync(filename, content, 'utf8');
-    console.log(`📄 ສ້າງໄຟລ໌: ${filename}`);
-}
-
-console.log('\\n🎉 ສຳເລັດທັງໝົດ! ທຸກໄຟລ໌ພ້ອມໃຊ້ງານແລ້ວ.');
-console.log('👉 ຂັ້ນຕອນຕໍ່ໄປ:');
-console.log('   1. ພິມຄຳສັ່ງ: npm install');
-console.log('   2. ພິມຄຳສັ່ງ: node server.js');
-console.log('   3. ເຂົ້າເວັບໄດ້ທີ່: http://localhost:3000');
